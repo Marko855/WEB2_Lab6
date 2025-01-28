@@ -1,0 +1,16 @@
+{
+    "name": "Video Recorder App",
+    "short_name": "VideoApp",
+    "description": "Record, save and view videos in your gallery",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+    "icons": [
+        {
+            "src": "/assets/icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

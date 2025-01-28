@@ -1,0 +1,17 @@
+{
+  "name": "video-recorder-app",
+  "version": "1.0.0",
+  "main": "service-worker.js",
+  "scripts": {
+    "start": "lite-server",
+    "build": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": "A progressive web app that allows video recording, saving videos, offline functionality, background sync, and push notifications."
+}

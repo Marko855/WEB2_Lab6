@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Recorder</title>
+  <link rel="stylesheet" href="/assets/styles/main.css">
+</head>
+<body>
+  <header>
+    <h1>Video Recorder App</h1>
+  </header>
+
+  <main>
+    <section class="recorder">
+      <h2>Record a Video</h2>
+      <video id="videoPlayer" autoplay muted></video>
+      <div class="buttons">
+        <button id="recordButton">Start Recording</button>
+        <button id="stopButton" disabled>Stop Recording</button>
+      </div>
+      <div id="statusMessage"></div>
+    </section>
+
+    <section class="saved-videos">
+      <h2>Saved Videos</h2>
+      <div id="galleryContainer"></div>
+    </section>
+    <section class="counter">
+        <h3>Total Recorded Videos: <span id="videoCount">0</span></h3>
+      </section>
+      
+  </main>
+
+  <footer>
+    <p>© 2025 Video Recorder App</p>
+  </footer>
+
+  <script src="/assets/scripts/main.js" defer></script>
+</body>
+</html>
