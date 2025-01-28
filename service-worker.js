@@ -36,15 +36,14 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
   
+  
   if (url.pathname.includes('browser-sync-client.js')) {
     return; 
   }
 
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {
-      if (cachedResponse) {
-        return cachedResponse;
-      }
+      return cachedResponse || fetch(event.request);
     })
   );
 });
