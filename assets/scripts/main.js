@@ -43,15 +43,16 @@ function saveVideo() {
 
   if ('serviceWorker' in navigator && 'SyncManager' in window) {
     navigator.serviceWorker.ready.then((registration) => {
-      registration.sync.register('video-sync')
+      registration.sync.register('counter-sync')
         .then(() => {
-          console.log('Background sync registered for video saving!');
+          console.log('Background sync registered for counter updates!');
         })
         .catch((err) => {
-          console.log('Background sync failed:', err);
+          console.log('Background sync failed for counter:', err);
         });
     });
   }
+  
 
   showNotification("Your video has been saved!");
 }
